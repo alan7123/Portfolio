@@ -403,21 +403,29 @@
     gap: 15px;
 }
 
-.cv-button {
-    display: inline-block;
-    padding: 12px 24px;
-    background: white;
-    color: black;
-    border: 2px solid white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+.resume-buttons {
+    display: flex !important;
+    gap: 15px !important;
+    align-items: center;
 }
 
-.cv-button:hover {
-    background: #dddddd;
-    transform: translateY(-2px);
+.resume-buttons a.cv-button {
+    display: inline-block !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 2px solid #ffffff !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+
+.resume-buttons a.cv-button:hover {
+    background: #dddddd !important;
+    color: #000000 !important;
+    transform: translateY(-2px) !important;
 }
     </style>
 </head>
@@ -882,26 +890,24 @@
             <div>
 
                 <h3>
-                   My CV
+                 Download Or View Here
                 </h3>
 
                 <p>
-                    Download Or View My CV here .
+                   
                 </p>
+                
+               <div class="resume-buttons">
+    <a 
+        href="Alan_Madhu_CV.pdf" target="_blank" class="cv-button">
+        View CV
+    </a>
+                   
 
-            </div>
+    <a href="Alan_Madhu_CV.pdf" download class="cv-button">
+        Download CV
+    </a>
 
-            <a
-                href="Alan_Madhu_CV.pdf"
-                download
-                class="btn primary"
-            >
-                Download CV
-            </a>
-            <a href="Alan_Madhu_CV.pdf"
-                target="_blank"
-                >
-                View CV
             </a>
 
         </div>
